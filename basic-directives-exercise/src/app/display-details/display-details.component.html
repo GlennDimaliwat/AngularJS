@@ -7,5 +7,5 @@
   Secret Password = tuna
 </p>
 <p *ngFor="let paragraph of paragraphs; let i = index"
-   [ngStyle]="{backgroundColor: i > 4 ? 'blue' : 'white'}"
-   [ngClass]="{paragraph5: i > 4}">{{ paragraph }}{{ i }}</p>
+   [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'white'}"
+   [ngClass]="{paragraph5: i >= 4}">{{ paragraph }}</p>
